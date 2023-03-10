@@ -17,3 +17,20 @@ def auto_reg():
     resp_ui = Response(r_user_info)
     resp_ui.assert_status_code(200).validate(Post)
     return [r_auto_test.json()["result"]["token"], r_user_info.json()["result"]["roles"][0]["workspaceId"]]
+
+
+@pytest.fixture()
+def random_data():
+    import random
+    import string
+
+    random_data = ''.join(random.choice(string.ascii_uppercase) for _ in range(20))
+    return random_data
+
+@pytest.fixture()
+def random_cyrillic_data():
+    import random
+
+    cyrillic_chars = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
+    random_data = ''.join(random.choice(cyrillic_chars) for _ in range(10))
+    return random_data
