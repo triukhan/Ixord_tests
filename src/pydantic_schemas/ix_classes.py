@@ -11,7 +11,7 @@ class Post(BaseModel):
 
     @validator("hasError")
     def check_that_error_is_absent(cls, v):
-        if v:
+        if v == True:
             raise ValueError('Error is not absent.')
         else:
             return v
