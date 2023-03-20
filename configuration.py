@@ -6,3 +6,4 @@ ENDPOINT_SID = "https://stage.ixord.com/api/api/executions/getExecutionByKey?sec
 REFRESH = "&skip=0&count=100&showOnlyUsersExecutions=false&respectToAdminRole=true&type=1&sortByModif=false&respectToSort=true"
 ENDPOINT_REFRESH = "https://stage.ixord.com/api/api/executions/getExecutionsByTagIds?status=2&workspaceId="
 ENDPOINT_EXECUTE = "https://stage.ixord.com/api/api/defaultExecuteExecution/executeSteps?executionId="
+ENDPOINT_EX = "https://stage.ixord.com/api/api/execution/"

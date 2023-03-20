@@ -171,3 +171,14 @@ def test_pin_card(auto_reg):
                        "&skip=0&count=100&respectToAdminRole=true&type=1", headers=auto_reg[0], json={})
     Response(rp).assert_status_code(200).validate(Post)
     assert len(rp.json()["result"]["items"]) == 1
+
+
+def test_unpin_card(auto_reg):
+    requests.post(ENDPOINT + "execution/pinExecution?executionId=" + auto_reg[2], headers=auto_reg[0])
+    requests.post(ENDPOINT + "execution/unpinExecution?executionId=" + auto_reg[2], headers=auto_reg[0])
+    rp = requests.post(ENDPOINT + "executions/getPinnedExecutionsByTagIds?workspaceId=" + str(auto_reg[1]) +
+                       "&skip=0&count=100&respectToAdminRole=true&type=1", headers=auto_reg[0], json={})
+    Response(rp).assert_status_code(200).validate(Post)
+    assert len(rp.json()["result"]["items"]) == 0
+
+
