@@ -99,7 +99,7 @@ def test_complete_by_done(auto_reg):
     Response(cl).assert_status_code(200).validate(Post)
 
 
-def test_drd__list_elements(auto_reg, rand):
+def test_drd_list_elements(auto_reg, rand):
     sid = requests.get(ENDPOINT_SID + auto_reg[3], headers=auto_reg[0]).json()["result"]["steps"][0]["id"]
 
     requests.post(ENDPOINT_EXECUTE + auto_reg[2], headers=auto_reg[0],
