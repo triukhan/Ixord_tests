@@ -27,3 +27,10 @@ ALL_ELEMENTS = {
      "{\"style\":\"ordered\",\"items\":[\"PIKA\",\"PIKA\",\"PIKA\"]}},{\"type\":\"image\",\"data\":{\"file\":{\"url\":"
      "\"images/ChecklistImages/64187b0e0029baebb1f21475/content/Pikachu-SVG-File-Free_2cca3351acf74ff99350b1017940a"
      "597.png\",\"title\":\"Pika\"}}},{\"type\":\"table\",\"data\":{\"withHeadings\":false,\"content\":[]}}]}"}
+ENDPOINT_PRF = "https://api.ixord.com/api/api/profileEdit/"
+PRF_TOKEN = {"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3NjMiLCJqdGkiOiJkODc5ZDEwNS0wMjM"
+                              "yLTQ0MDMtYjhlZi0wNGFhYTE5MGFhNWEiLCJlbWFpbCI6Im00dHIxeDE3MDMrMjM0QGdtYWlsLmNvbSIsImh0dHA"
+                              "6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjo"
+                              "ibTR0cjF4MTcwMysyMzRAZ21haWwuY29tIiwiZXhwIjoxNjgyNTk4OTA4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N"
+                              "0OjUwMDAiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.sNU60RL3FOGjPulBJT7IHYH3c"
+                              "_SsKXWob0iNwpSy_Sg"}
