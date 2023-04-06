@@ -15,3 +15,18 @@ class Post(BaseModel):
             raise ValueError('Error is not absent.')
         else:
             return v
+
+
+class Negative(BaseModel):
+    result: object
+    errorMessage: str
+    localizationKey: str
+    arguments: object
+    hasError: bool
+
+    @validator("hasError")
+    def check_that_error_is_absent(cls, v):
+        if v != True:
+            raise ValueError('Error is absent.')
+        else:
+            return v
