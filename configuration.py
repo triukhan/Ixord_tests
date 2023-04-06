@@ -8,6 +8,11 @@ ENDPOINT_REFRESH = "https://stage.ixord.com/api/api/executions/getExecutionsByTa
 ENDPOINT_EXECUTE = "https://stage.ixord.com/api/api/defaultExecuteExecution/executeSteps?executionId="
 ENDPOINT_EX = "https://stage.ixord.com/api/api/execution/"
 ENDPOINT_EXS = "https://stage.ixord.com/api/api/executions/"
+ENDPOINT_PRF = "https://stage.ixord.com/api/api/profileEdit/"
+ENDPOINT_TMP = "https://stage.ixord.com/api/api/execution/saveAsChecklist?executionId="
+ENDPOINT_UP_TMP = "https://stage.ixord.com/api/api/search/searchWorkspaceChecklists?search=&workspaceId="
+UP_END = "&skip=0&count=100&allowExecuteOnly=true&loadRelatedData=false&type=1"
+END_START = "https://stage.ixord.com/api/api/defaultStartExecution/start?checklistId="
 
 
 IMAGES = {
@@ -27,10 +32,9 @@ ALL_ELEMENTS = {
      "{\"style\":\"ordered\",\"items\":[\"PIKA\",\"PIKA\",\"PIKA\"]}},{\"type\":\"image\",\"data\":{\"file\":{\"url\":"
      "\"images/ChecklistImages/64187b0e0029baebb1f21475/content/Pikachu-SVG-File-Free_2cca3351acf74ff99350b1017940a"
      "597.png\",\"title\":\"Pika\"}}},{\"type\":\"table\",\"data\":{\"withHeadings\":false,\"content\":[]}}]}"}
-ENDPOINT_PRF = "https://api.ixord.com/api/api/profileEdit/"
-PRF_TOKEN = {"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3NjMiLCJqdGkiOiJkODc5ZDEwNS0wMjM"
-                              "yLTQ0MDMtYjhlZi0wNGFhYTE5MGFhNWEiLCJlbWFpbCI6Im00dHIxeDE3MDMrMjM0QGdtYWlsLmNvbSIsImh0dHA"
-                              "6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjo"
-                              "ibTR0cjF4MTcwMysyMzRAZ21haWwuY29tIiwiZXhwIjoxNjgyNTk4OTA4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N"
-                              "0OjUwMDAiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.sNU60RL3FOGjPulBJT7IHYH3c"
-                              "_SsKXWob0iNwpSy_Sg"}
+PRF_TOKEN = {"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MyIsImp0aSI6IjZjNTEyYjEzLTAwZWU"
+                              "tNDk5NC1iZGRkLWJjNWJlNzUwYTAyMyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9"
+                              "pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjEiLCJleHAiOjE2ODMzNjMwMzEsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3"
+                              "Q6NTAwMCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMCJ9.EmVxcU8OtbAk037FVgX2YV3xYU57wvdcWqS0u"
+                              "c8Bzp0"}
+ERR_EMAIL = "The specified string is not in the form required for an e-mail address."
