@@ -20,12 +20,6 @@ def auto_reg():
 
 
 @pytest.fixture()
-def save_template(auto_reg):
-    save_temp = requests.post(ENDPOINT_TMP + auto_reg[2], headers=auto_reg[0])
-    return save_temp
-
-
-@pytest.fixture()
 def rand():
     import random
     import string
