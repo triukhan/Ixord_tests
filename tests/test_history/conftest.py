@@ -16,7 +16,7 @@ def auto_reg():
                                   "workspaceId": r_user_info.json()["result"]["roles"][0]["workspaceId"]})
     return [{"Authorization": "Bearer " + r_auto_test.json()["result"]["token"]},
             r_user_info.json()["result"]["roles"][0]["workspaceId"],
-            cre_lis.json()["result"]["id"], cre_lis.json()["result"]["secureKey"]]
+            str(cre_lis.json()["result"]["id"]), cre_lis.json()["result"]["secureKey"]]
 
 
 @pytest.fixture()

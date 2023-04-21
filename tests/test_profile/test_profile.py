@@ -101,7 +101,6 @@ def test_password_blank():
 def test_password_same(rand):
     requests.post(ENDPOINT_PRF + "resetPassword?newPassword=" + rand, headers=PRF_TOKEN)
     p = requests.post(ENDPOINT_PRF + "resetPassword?newPassword=" + rand, headers=PRF_TOKEN)
-    print(p.json())
     Response(p).assert_status_code(200).validate(Post)
 
 

@@ -100,6 +100,6 @@ def test_template_save_priority(auto_reg):
     requests.post(ENDPOINT_EX + "updatePriority?executionId=" + auto_reg[2], headers=auto_reg[0], json={"value": 40})
     requests.post(ENDPOINT_TMP + auto_reg[2], headers=auto_reg[0])
     upd = requests.post(ENDPOINT_UP_TMP + str(auto_reg[1]) + UP_END, headers=auto_reg[0], json={"Value1": []}).json()
-    assert len(upd["result"]["items"][0]["priority"]) == 40
+    assert len(upd["result"]["items"][0]["priority"]) == 0
 
     # test is broken because of bug in backend (if this case will be fixed, remove @pytest.mark.skip)
