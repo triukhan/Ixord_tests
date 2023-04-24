@@ -38,3 +38,4 @@ PRF_TOKEN = {"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzd
                               "OjUwMDAiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ._UWQD4T3CB67Ta_LcfpTUV8dniO0zk0_SyJxZ"
                               "tM3dXQ"}
 ERR_EMAIL = "The specified string is not in the form required for an e-mail address."
+CONNECTION = "mssql+pyodbc://autotest:8sXxyLO@ixs-stage-vm\SQLEXPRESS"
