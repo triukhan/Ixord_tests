@@ -19,12 +19,3 @@ def auto_reg():
             cre_lis.json()["result"]["id"], cre_lis.json()["result"]["secureKey"]]
 
 
-@pytest.fixture()
-def rand():
-    import random
-    import string
-
-    rand = ''.join(random.choice(string.ascii_uppercase) for _ in range(20))
-    return rand
-
-

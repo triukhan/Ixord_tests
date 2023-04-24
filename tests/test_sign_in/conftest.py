@@ -8,7 +8,8 @@ from configuration import *
 def reg(rand):
     requests.post(ENDPOINT + "auth/exists", json={"Value": rand + "@gmail.com"})
     code = requests.post(ENDPOINT + "auth/checkConfirmationCode?email=" + rand + "@gmail.com" + "&code=")
-    return [code[]]
+    request = 0
+    return [rand + "gmail.com", request]
 
 
 

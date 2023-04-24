@@ -20,13 +20,3 @@ def auto_reg():
             r_user_info.json()["result"]["roles"][0]["workspaceId"],
             cre_lis.json()["result"]["id"], cre_lis.json()["result"]["secureKey"]]
 
-
-@pytest.fixture()
-def rand():
-    import random
-    import string
-
-    rand = ''.join(random.choice(string.ascii_uppercase) for _ in range(20))
-    return rand
-
-
