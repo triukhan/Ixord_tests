@@ -2,16 +2,6 @@ import pytest
 import requests
 
 from configuration import *
-from src.baseclasses.response import Response
-from src.pydantic_schemas.ix_classes import Post
-
-@pytest.fixture()
-def rand():
-    import random
-    import string
-
-    rand = ''.join(random.choice(string.ascii_uppercase) for _ in range(25))
-    return rand
 
 
 def _email_request(a):
